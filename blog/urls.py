@@ -13,4 +13,5 @@ urlpatterns = [
 	# added to remove runtime error it work what is the diffrence in follwing code ?
 	#path('post/edit/<int:pk>/', views.post_edit_view, name='post_edit'),
   	path('post/<int:pk>/edit/', views.post_edit_view, name='post_edit'),
+  	path('drafts/', views.post_draft_list_view, name='post_draft_list'),
 ]
